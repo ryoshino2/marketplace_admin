@@ -9,7 +9,7 @@ public class Product {
     Product(ProductBuilder builder) {
     }
 
-    public Product(String name, String price, String description) {
+    public Product(String name, Double price, String description) {
         this.name = name;
         this.price = price;
         this.description = description;
@@ -27,7 +27,7 @@ public class Product {
     private String name;
 
     @Column(name = "price", nullable = false)
-    private String price;
+    private Double price;
 
     @Column(name = "description")
     private String description;
@@ -36,7 +36,7 @@ public class Product {
         return name;
     }
 
-    public String getPrice() {
+    public Double getPrice() {
         return price;
     }
 

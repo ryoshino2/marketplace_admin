@@ -2,7 +2,7 @@ package marketplace.demo.model;
 
 public final class ProductBuilder implements ProductBuilderRequiredName, ProductBuilderRequiredPrice {
     private String name;
-    private String price;
+    private Double price;
     private String description;
 
     private ProductBuilder() {
@@ -19,7 +19,7 @@ public final class ProductBuilder implements ProductBuilderRequiredName, Product
     }
 
     @Override
-    public ProductBuilder price(String price) {
+    public ProductBuilder price(Double price) {
         this.price = price;
         return this;
     }

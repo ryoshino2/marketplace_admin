@@ -33,7 +33,7 @@ public class ProductServiceTest {
 
     @BeforeEach
     public void setUp() {
-        product = ProductBuilder.with().name("hello").price("world").withDescription("DELL").build();
+        product = ProductBuilder.with().name("hello").price(14.7).withDescription("DELL").build();
         productList = new ArrayList<>();
         productList.add(product);
     }

@@ -1,5 +1,5 @@
 package marketplace.demo.model;
 
 public interface ProductBuilderRequiredPrice {
-    ProductBuilder price(String price);
+    ProductBuilder price(Double price);
 }

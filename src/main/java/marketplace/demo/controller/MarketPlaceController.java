@@ -2,6 +2,8 @@ package marketplace.demo.controller;
 
 
 import marketplace.demo.model.Product;
+import marketplace.demo.model.request.RequestBuyProduct;
+import marketplace.demo.model.response.ProductDto;
 import marketplace.demo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,9 +29,16 @@ public class MarketPlaceController {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
+    @PostMapping("/buy-products")
+    public ResponseEntity<String> buyProductsController(@RequestBody RequestBuyProduct requestBuyProduct) {
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
     @GetMapping("/listProducts")
     @ResponseBody
-    public List<Product> listProductsController() {
-        return productService.listAllProducts();
+    public ResponseEntity<List<ProductDto>> listProductsController() {
+        return new ResponseEntity<>(productService.listAllProducts(), HttpStatus.OK);
     }
+
+
 }

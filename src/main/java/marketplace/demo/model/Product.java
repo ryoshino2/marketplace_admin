@@ -13,6 +13,7 @@ public class Product {
         this.name = name;
         this.price = price;
         this.description = description;
+        this.available = true;
     }
 
     public Product() {
@@ -32,6 +33,9 @@ public class Product {
     @Column(name = "description")
     private String description;
 
+    @Column(name = "available", nullable = false)
+    private Boolean available;
+
     public String getName() {
         return name;
     }
@@ -44,5 +48,7 @@ public class Product {
         return description;
     }
 
-
+    public Boolean getAvailable() {
+        return available;
+    }
 }

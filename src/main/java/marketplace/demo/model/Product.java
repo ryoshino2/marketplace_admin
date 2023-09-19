@@ -1,6 +1,7 @@
 package marketplace.demo.model;
 
 import jakarta.persistence.*;
+import marketplace.demo.model.builder.ProductBuilder;
 
 @Entity
 @Table(name = "tb_product")

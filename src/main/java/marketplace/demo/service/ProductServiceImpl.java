@@ -1,7 +1,7 @@
 package marketplace.demo.service;
 
 import marketplace.demo.model.Product;
-import marketplace.demo.model.ProductBuilder;
+import marketplace.demo.model.builder.ProductBuilder;
 import marketplace.demo.model.response.ProductDto;
 import marketplace.demo.repository.ProductRepository;
 import org.modelmapper.ModelMapper;

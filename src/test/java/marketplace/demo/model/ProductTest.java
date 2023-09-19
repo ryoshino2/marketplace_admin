@@ -1,6 +1,7 @@
 package marketplace.demo.model;
 
 
+import marketplace.demo.model.builder.ProductBuilder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

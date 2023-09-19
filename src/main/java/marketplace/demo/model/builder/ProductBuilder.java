@@ -1,4 +1,6 @@
-package marketplace.demo.model;
+package marketplace.demo.model.builder;
+
+import marketplace.demo.model.Product;
 
 public final class ProductBuilder implements ProductBuilderRequiredName, ProductBuilderRequiredPrice {
     private String name;

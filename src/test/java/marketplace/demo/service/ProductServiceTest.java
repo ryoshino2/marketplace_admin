@@ -1,7 +1,7 @@
 package marketplace.demo.service;
 
 import marketplace.demo.model.Product;
-import marketplace.demo.model.ProductBuilder;
+import marketplace.demo.model.builder.ProductBuilder;
 import marketplace.demo.model.response.ProductDto;
 import marketplace.demo.repository.ProductRepository;
 import org.junit.jupiter.api.Assertions;
@@ -16,7 +16,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doReturn;
